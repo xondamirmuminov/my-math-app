@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledApp = styled.section`
   .App {
-    height: 100vh;
+    min-height: 100vh;
     padding: 0 15px;
     display: flex;
     justify-content: space-between;
@@ -37,11 +37,14 @@ const StyledApp = styled.section`
     div {
       height: 220px;
       border-radius: 15px;
-      line-height: 3;
+      line-height: 2;
       cursor: pointer;
       box-shadow: 10px 10px 12px grey;
 
       h1 {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
         font-size: 70px;
         letter-spacing: 5px;
         margin: 0;
@@ -85,6 +88,24 @@ const StyledApp = styled.section`
   }
   h1 {
     color: white;
+  }
+
+  @media (max-width: 860px) {
+    .App {
+      flex-direction: column;
+      row-gap: 35px;
+    }
+    .app__value {
+      width: 100%;
+      min-height: 30vh;
+      margin-top: 100px;
+    }
+    .app__card-inner {
+      width: 100%;
+    }
+    .app__card-inner div {
+      width: 100%;
+    }
   }
 `;
 
