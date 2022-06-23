@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { AiOutlineCheckCircle, RiCloseCircleLine, MdReplay } from "react-icons/all";
 import { ToastContainer, toast } from 'react-toastify';
-import { Layout, Menu } from 'antd';
+import { Layout } from 'antd';
 import useSound from "use-sound";
 import "antd/dist/antd.css";
 import '../../App.css';
@@ -9,12 +9,9 @@ import 'react-toastify/dist/ReactToastify.min.css';
 const music = require("../../assets/error.mp3");
 const StyledApp = require('../../styles/app').default;
 
-const { Header } = Layout;
-
 function Divide() {
   const [firstNum, setFirstNum] = useState(Math.floor(Math.random() * 100) + 35);
   const [secondNum, setSecondNum] = useState(Math.floor(Math.random() * 100));
-  const [answer, setAnswer] = useState<number>(0);
   const [correctAnswersCount, setCorrectAnswersCount] = useState<number>(0);
   const [errorAnswersCount, setErrorAnswersCount] = useState<number>(0);
   const [answerItem, setAnswerItem] = useState([
@@ -89,7 +86,7 @@ function Divide() {
                 <span style={{color: `${colors.sort( () => .5 - Math.random())[0]}`}}>/</span>
                 <span style={{color: `${colors.sort( () => .5 - Math.random())[0]}`}}>{secondNum}</span>
                 <span style={{color: `${colors.sort( () => .5 - Math.random())[0]}`}}>=</span>
-                <span style={{color: `${colors.sort( () => .5 - Math.random())[0]}`}}>{answer || '?'}</span>
+                <span style={{color: `${colors.sort( () => .5 - Math.random())[0]}`}}>{0 || '?'}</span>
               </h1>
             </div>
             <div className="app__card-inner">
