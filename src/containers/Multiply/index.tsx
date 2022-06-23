@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { AiOutlineCheckCircle, RiCloseCircleLine, MdReplay } from "react-icons/all";
 import { ToastContainer, toast } from 'react-toastify';
-import { Layout } from 'antd';
 import useSound from "use-sound";
 import "antd/dist/antd.css";
 import '../../App.css';
