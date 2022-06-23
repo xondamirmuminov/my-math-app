@@ -91,7 +91,7 @@ function Subtract() {
             <div className="app__card-inner">
               {
                 answerItem.sort(() => .5 - Math.random()).map(item => (
-                  <div style={{backgroundColor: `${colors.sort( () => .5 - Math.random())[0]}`, overflow: 'hidden', padding: '50px'}} key={item} onClick={() => handleAnswer(item)}>
+                  <div style={{backgroundColor: `${colors.sort( () => .5 - Math.random())[0]}`, overflow: 'hidden', padding: '15px'}} key={item} onClick={() => handleAnswer(item)}>
                     <h1>{item}</h1>
                   </div>
                 ))
