@@ -35,7 +35,7 @@ const StyledApp = styled.section`
     flex-direction: column;
     row-gap: 25px;
     div {
-      height: 220px;
+      height: 150px;
       border-radius: 15px;
       line-height: 2;
       cursor: pointer;
